@@ -1,0 +1,159 @@
+ <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Desculpa, Gabi 🐶💖</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --rosa: #ffeef2;
+      --rosa-claro: #ffd1dc;
+      --rosa-escuro: #d36c6c;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background-color: var(--rosa);
+      color: #4a4a4a;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    .container {
+      max-width: 100%;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2em;
+      color: var(--rosa-escuro);
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.1em;
+      margin-top: 15px;
+      line-height: 1.5em;
+    }
+
+    .letter {
+      background-color: #fff5f8;
+      border: 2px dashed var(--rosa-claro);
+      border-radius: 15px;
+      padding: 20px;
+      margin-top: 30px;
+      box-shadow: 0 0 10px rgba(255,182,193,0.3);
+    }
+
+    .button {
+      background-color: var(--rosa-claro);
+      border: none;
+      padding: 14px 20px;
+      margin-top: 25px;
+      font-size: 1.1em;
+      cursor: pointer;
+      border-radius: 12px;
+      color: #4a4a4a;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #ffb6c1;
+    }
+
+    .dog, .heart {
+      position: absolute;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .dog {
+      width: 40px;
+      animation: floatUp 8s linear infinite;
+    }
+
+    .heart {
+      width: 18px;
+      height: 18px;
+      background-color: pink;
+      clip-path: polygon(50% 0%, 100% 35%, 82% 100%, 50% 80%, 18% 100%, 0% 35%);
+      animation: floatUp 6s linear infinite;
+      opacity: 0.7;
+    }
+
+    @keyframes floatUp {
+      0% {
+        transform: translateY(100vh) rotate(0deg);
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-20vh) rotate(360deg);
+        opacity: 0;
+      }
+    }
+
+    audio {
+      display: none;
+    }
+
+    @media (max-width: 400px) {
+      h1 {
+        font-size: 1.6em;
+      }
+
+      .letter {
+        padding: 15px;
+      }
+
+      .button {
+        width: 100%;
+        font-size: 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <audio autoplay loop>
+    <source src="https://dl.dropboxusercontent.com/scl/fi/l8q3gd7v6fvh5g50m9kl7/Little-Things-One-Direction.mp3?rlkey=5au88b9r6szdqwshcd3mxrz5x&st=ej7x6t2j&dl=0" type="audio/mp3">
+    Seu navegador não suporta áudio :(
+  </audio>
+
+  <div class="container">
+    <h1>Desculpa, Gabi 🥺🐶</h1>
+    <p>Eu sei que errei... então fiz esse site pra te mostrar que me importo de verdade.</p>
+
+    <div class="letter">
+      <p>Gabi,</p>
+      <p>Você é uma das pessoas mais especiais que eu já conheci, e doeu saber que te magoei.</p>
+      <p>Não foi minha intenção, desculpa te fazer raiva gabizinha.</p>
+      <p>Me desculpa? De coração. 💗</p>
+      <p>Com carinho,</p>
+      <p><strong>Neto 🐾</strong></p>
+    </div>
+
+    <button class="button" onclick="alert('Obrigado por ler até aqui 💗 Já fico feliz só de saber que viu.')">
+      Me perdoa? 🥹
+    </button>
+  </div>
+
+  <!-- Doguinhos e corações flutuando -->
+  <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" class="dog" style="left: 10%; animation-delay: 0s;">
+  <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" class="dog" style="left: 50%; animation-delay: 2s;">
+  <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" class="dog" style="left: 80%; animation-delay: 4s;">
+
+  <div class="heart" style="left: 25%; animation-delay: 1s;"></div>
+  <div class="heart" style="left: 45%; animation-delay: 3s;"></div>
+  <div class="heart" style="left: 70%; animation-delay: 5s;"></div>
+</body>
+</html>
